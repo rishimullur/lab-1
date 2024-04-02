@@ -109,10 +109,10 @@ st.write("- Traveling and exploring new cultures")
 st.write("- Reading non-fiction books")
 st.markdown("<hr class='separator'>", unsafe_allow_html=True)
 
-# Interesting Projects section
-# st.header("Interesting Projects")
-# st.write("- [Project 1 Name](https://www.example.com/project1)")
-# st.write("  - A brief description of the project and its key features.")
+Interesting Projects section
+st.header("Interesting Projects")
+st.write("- [Pokiai]")
+st.write("  - A wearable AI device that always listens to you and generates tasks to do from your voice data.")
 # # st.write("- [Project 2 Name](https://www.example.com/project2)")
 # # st.write("  - A brief description of the project and its key features.")
 # # st.markdown("<hr class='separator'>", unsafe_allow_html=True)
