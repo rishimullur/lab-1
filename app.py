@@ -120,7 +120,7 @@ st.markdown("<hr class='separator'>", unsafe_allow_html=True)
 # Contact Me button
 st.markdown(
     """
-    <a href="https://ww.rishim.xyz" class="contact-button" target="_blank">Contact Me</a>
+    <a href="https://www.rishim.xyz" class="contact-button" target="_blank">Contact Me</a>
     """,
     unsafe_allow_html=True,
 )
