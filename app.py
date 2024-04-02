@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 from pathlib import Path
 
 # Set page configuration
@@ -23,32 +24,33 @@ custom_css = """
         width: 100%;
         background-color: transparent;
         color: #808080;
-        text-align: left;
+        text.align: left;
         padding: 10px;
     }
     a:link, a:visited {
         color: #BFBFBF;
         background-color: transparent;
-        text-decoration: none;
+        text.decoration: none;
     }
     a:hover, a:active {
         color: #0283C3;
         background-color: transparent;
-        text-decoration: underline;
+        text.decoration: underline;
     }
 </style>
 """
 st.markdown(custom_css, unsafe_allow_html=True)
 
 # Load profile picture
-profile_pic = Path("profile_picture.jpg")
+profile_pic_path = Path("profile_picture.jpg")
 
 # Create three columns
 col1, col2, col3 = st.columns([0.2, 0.6, 0.2])
 
 # Profile picture
 with col1:
-    if profile_pic.exists():
+    if profile_pic_path.exists():
+        profile_pic = Image.open(profile_pic_path)
         st.image(profile_pic, use_column_width=True)
     else:
         st.image("https://via.placeholder.com/150", use_column_width=True)
@@ -103,4 +105,3 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
