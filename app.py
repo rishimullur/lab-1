@@ -23,7 +23,7 @@ def main():
           }
           </style>
           <div class="profile-img">
-              ![](https://via.placeholder.com/150)
+              ![](https://rishim.xyz/IMG_0004.JPG)
           </div>
           """,
           unsafe_allow_html=True,
