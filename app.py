@@ -89,15 +89,15 @@ with col3:
 # Education section
 st.header("Education")
 st.write("- M.S. in Technology Innovation, [UW], [In-Progress]")
-st.write("- B.Tech. in Mechanical Engineering, [NITW]")
+st.write("- B.Tech in Mechanical Engineering, [NITW]")
 st.markdown("<hr class='separator'>", unsafe_allow_html=True)
 
 # Work Experience section
 st.header("Work Experience")
-st.write("- Product Manager, [ClearFeed]")
+st.write("Product Manager, [ClearFeed]")
 st.write("  - Built and led product team")
 # st.write("  - ")
-st.write("- Software Engineer")
+st.write("Software Engineer")
 # st.write("  - ")
 st.write("  - Collaborated with cross-functional teams to identify 5G solutions")
 st.markdown("<hr class='separator'>", unsafe_allow_html=True)
@@ -130,7 +130,7 @@ st.markdown(
     """
     <div class="footer">
         <p style='font-size: 0.875em;'>Made with <a style='display: inline; text-align: left;' href="https://streamlit.io/" target="_blank">Streamlit</a><br 'style= top:3px;'>
-        with <img src="https://em-content.zobj.net/source/skype/289/red-heart_2764-fe0f.png" alt="heart" height= "10"/><a style='display: inline; text-align: left;' href="https://github.com/yourname" target="_blank"> by YourName</a></p>
+        with <img src="https://em-content.zobj.net/source/skype/289/red-heart_2764-fe0f.png" alt="heart" height= "10"/><a style='display: inline; text-align: left;' href="https://github.com/yourname" target="_blank"> by Rishi</a></p>
     </div>
     """,
     unsafe_allow_html=True,
