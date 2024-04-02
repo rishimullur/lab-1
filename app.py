@@ -62,7 +62,7 @@ st.markdown(custom_css, unsafe_allow_html=True)
 profile_pic_path = Path("profile_picture.jpg")
 
 # Create three columns
-col1, col2, col3 = st.columns([0.2, 0.6, 0.2])
+col1, col2, col3 = st.columns([0.15, 0.6, 0.15])
 
 # Profile picture
 with col1:
