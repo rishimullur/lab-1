@@ -24,18 +24,35 @@ custom_css = """
         width: 100%;
         background-color: transparent;
         color: #808080;
-        text.align: left;
+        text-align: left;
         padding: 10px;
     }
     a:link, a:visited {
         color: #BFBFBF;
         background-color: transparent;
-        text.decoration: none;
+        text-decoration: none;
     }
     a:hover, a:active {
         color: #0283C3;
         background-color: transparent;
-        text.decoration: underline;
+        text-decoration: underline;
+    }
+    .separator {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 20px 0;
+    }
+    .contact-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0283C3;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
+    .contact-button:hover {
+        background-color: #025e8d;
     }
 </style>
 """
@@ -69,11 +86,13 @@ with col2:
 with col3:
     st.write("")
 
-# Education and Work Experience
+# Education section
 st.header("Education")
 st.write("- M.S. in Data Science, [University Name], [Graduation Year]")
 st.write("- B.S. in Statistics, [University Name], [Graduation Year]")
+st.markdown("<hr class='separator'>", unsafe_allow_html=True)
 
+# Work Experience section
 st.header("Work Experience")
 st.write("- Data Scientist, [Company Name], [Start Date] - Present")
 st.write("  - Developed and deployed machine learning models for predictive analytics")
@@ -81,19 +100,30 @@ st.write("  - Conducted data analysis and created data visualizations to communi
 st.write("- Data Analyst, [Company Name], [Start Date] - [End Date]")
 st.write("  - Performed statistical analysis and data mining on large datasets")
 st.write("  - Collaborated with cross-functional teams to identify data-driven solutions")
+st.markdown("<hr class='separator'>", unsafe_allow_html=True)
 
-# Hobbies and Interests
+# Hobbies and Interests section
 st.header("Hobbies and Interests")
 st.write("- Traveling and exploring new cultures")
 st.write("- Playing chess and board games")
 st.write("- Reading non-fiction books")
+st.markdown("<hr class='separator'>", unsafe_allow_html=True)
 
-# Interesting Projects
+# Interesting Projects section
 st.header("Interesting Projects")
 st.write("- [Project 1 Name](https://www.example.com/project1)")
 st.write("  - A brief description of the project and its key features.")
 st.write("- [Project 2 Name](https://www.example.com/project2)")
 st.write("  - A brief description of the project and its key features.")
+st.markdown("<hr class='separator'>", unsafe_allow_html=True)
+
+# Contact Me button
+st.markdown(
+    """
+    <a href="https://www.example.com/contact" class="contact-button" target="_blank">Contact Me</a>
+    """,
+    unsafe_allow_html=True,
+)
 
 # Footer
 st.markdown(
