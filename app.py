@@ -109,7 +109,7 @@ st.write("- Traveling and exploring new cultures")
 st.write("- Reading non-fiction books")
 st.markdown("<hr class='separator'>", unsafe_allow_html=True)
 
-Interesting Projects section
+#Interesting Projects section
 st.header("Interesting Projects")
 st.write("- [Pokiai]")
 st.write("  - A wearable AI device that always listens to you and generates tasks to do from your voice data.")
